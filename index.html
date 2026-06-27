@@ -1,25 +1,98 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>برای تو ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ برای تو ❤️</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background:black;color:white;text-align:center;font-family:sans-serif;">
+<body>
 
-<h1>سلام عشق من ❤️</h1>
+<div class="page active" id="page1">
+    <h1>یه سورپرایز برات دارم ❤️</h1>
+    <p>وقتی آماده‌ای روی دکمه پایین بزن.</p>
 
-<p>یه سورپرایز کوچولو برات ساختم...</p>
+    <button onclick="nextPage(2)">شروع</button>
+</div>
 
-<video width="300" controls>
-<source src="video.mp4" type="video/mp4">
-</video>
+
+<div class="page" id="page2">
+
+    <h2>🎥 یه ویدیو برای تو</h2>
+
+    <video controls width="90%">
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <button onclick="nextPage(3)">ادامه ➜</button>
+
+</div>
+
+
+<div class="page" id="page3">
+
+<h2>💌 یه حرف از ته دل...</h2>
+
+<p id="letter">
+
+اینجا متن خودت رو بعداً می‌نویسی...
+
+</p>
+
+<br>
+
+<button onclick="nextPage(4)">ادامه ➜</button>
+
+</div>
+
+
+<div class="page" id="page4">
+
+<h2>📸 عکس‌هامون</h2>
+
+<img id="slide" src="images/1.jpg">
 
 <br><br>
 
-<button onclick="alert('روز دختر مبارک ❤️')">
-ادامه
-</button>
+<button onclick="nextPage(5)">ادامه ➜</button>
+
+</div>
+
+
+<div class="page" id="page5">
+
+<h2>🎵 این آهنگ همیشه یادم میندازت...</h2>
+
+<audio controls>
+
+<source src="music/music.mp3" type="audio/mpeg">
+
+</audio>
+
+<br><br>
+
+<button onclick="nextPage(6)">آخرین صفحه ❤️</button>
+
+</div>
+
+
+<div class="page" id="page6">
+
+<h1>🌹 روز دختر مبارک 🌹</h1>
+
+<p>
+
+ممنون که توی زندگیمی ❤️
+
+</p>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
