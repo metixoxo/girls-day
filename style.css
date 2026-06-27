@@ -8,9 +8,11 @@
 body{
     background:linear-gradient(135deg,#0f0f0f,#1f1f1f);
     color:white;
-    height:100vh;
-    overflow:hidden;
+    min-height:100vh;
+    overflow-y:auto;
+    scroll-behavior:smooth;
 }
+
 
 .page{
     display:none;
